@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Azad Kashmir</title>
+  </head>
+  <body>
+    <header>
+        <div class="logo"><img src=logo.png></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Banjosa Lake</a></li>
+            <li><a href="#">Tohli Pir</a></li>
+            <li><a href="#">Pir Chanasi</a></li>
+            <li><a href="#">Keran</a></li>
+            <li><a href="#">Arang Kel</a></li>
+        </ul>
+    </header>
+    
+    <!--<div class="container">
+        <div class="row">
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor eget libero non egestas. Integer eget magna id ipsum condimentum rutrum at nec turpis. Ut consectetur et ex ac rutrum. Donec euismod tempor augue in sollicitudin. Praesent sagittis pulvinar nulla ut elementum. Vestibulum pulvinar hendrerit risus id auctor.
+            </div>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor eget libero non egestas. Integer eget magna id ipsum condimentum rutrum at nec turpis. Ut consectetur et ex ac rutrum. Donec euismod tempor augue in sollicitudin. Praesent sagittis pulvinar nulla ut elementum. Vestibulum pulvinar hendrerit risus id auctor.
+            </div>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor eget libero non egestas. Integer eget magna id ipsum condimentum rutrum at nec turpis. Ut consectetur et ex ac rutrum. Donec euismod tempor augue in sollicitudin. Praesent sagittis pulvinar nulla ut elementum. Vestibulum pulvinar hendrerit risus id auctor.
+            </div>
+        </div>
+    </div>-->
+    
+    <footer>
+        <div>Footer column 1</div>
+        <div>Footer column 2</div>
+    </footer>
+  
+     <style>
+         html, body {
+             padding: 0;
+             margin: 0;
+         }
+         header {
+             display: flex;
+             align-items: center;
+             background-color: #404040;
+             color: white;
+             flex-direction: row;
+         }
+         .logo {
+             justify-content: flex-start;
+             padding: 15px;
+         }
+         .logo img {
+             width: 100%;
+         }
+         header ul {
+             display: flex;
+             list-style: none;
+             justify-content: flex-end;
+             flex: 2;
+            
+         }
+         header ul li {
+             padding: 0 10px;
+         }
+         header ul li a {
+             color: white;
+             text-decoration: none;
+         }
+         .container .row {
+             display: flex;
+             text-align: center;
+             color: white;
+             flex-direction: row;
+             flex-flow: row wrap;
+         }
+         .container .row div {
+             padding: 15px;
+             box-sizing: border-box;
+         }
+         .container .row div:nth-child(1) {
+             background-color: #10a8ab;
+             color: white;
+             flex: 1 25%;
+         }
+         
+         .container .row div:nth-child(2) {
+             background-color: #28bd8b;
+             flex: 2 50%;
+         }
+         
+         .container .row div:nth-child(3) {
+             background-color: #10a8ab;
+             flex: 1 25%;
+         }
+         
+         footer {
+             display: flex;
+         }
+         
+         footer div {
+             flex: 1;
+             background-color: #125474;
+             color: white;
+             padding: 10px;
+         }
+         
+         @media all and (max-width: 500px) {
+          .container .row {
+            flex-direction: column;
+          }
+             header {
+                 flex-direction: column;
+             }
+        }
+         
+         @media (max-width: 760px) {
+         .container .row div:nth-child(1) {
+             flex: 1 25%;
+         }
+         
+         .container .row div:nth-child(2) {
+             flex: 1 50%;
+         }
+         
+         .container .row div:nth-child(3) {
+             flex: 1 100%;
+         }
+         }
+     </style>
+  </body>
+</html>
