@@ -9,8 +9,8 @@ html, body {
 }
 
 h1 {
-  font-family: 'Conv_Canter Bold', sans-serif;
-  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
 }
 
 h2 {
@@ -40,10 +40,17 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
+  transition: all 0.3s ease;
+  &.posi {
+    position: fixed;
+    background-color: #18946b;
+    transition: all 0.3s ease;
+  }
 }
 .logo {
   justify-content: flex-start;
   padding: 15px;
+  flex: 1;
 }
 .logo img {
   width: 100%;
@@ -52,7 +59,7 @@ header ul {
   display: flex;
   list-style: none;
   justify-content: flex-end;
-  flex: 2;
+  flex: 5;
   li {
     padding: 0 10px;
     a {
@@ -80,6 +87,15 @@ header ul {
 }
 .flex-2 {
   flex: 2;
+}
+.l-img {
+  margin: 5px 5px 5px 0;
+}
+.r-img {
+  margin: 5px 0 5px 5px;
+}
+.c-img {
+  margin: 5px 5px;
 }
 .divider {
   color: white;
@@ -111,6 +127,7 @@ header ul {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     transition: filter 0.3s ease-out;
+    cursor: pointer;
   }
   img:hover {
     -webkit-filter: none;
@@ -118,13 +135,128 @@ header ul {
     transition: filter 0.3s ease-out;
   }
 }
+
 .container {
   .row {
     display: flex;
     color: #404040;
   }
 }
+
+.vertical-center {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+
 .loc-cnt {
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
+.nav-btn{
+  display: none;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 70px;
+  background-color: #18946b;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  header {
+    position: relative;
+    background-color: #18946b;
+    color: #404040 !important;
+    a {
+      color: #404040 !important;
+    }
+
+  }
+  .logo img {
+    width: 45%;
+  }
+  .main-menu-list {
+    display: none;
+  }
+
+  .abs-center {
+    top: 50%;
+  }
+  .home-text  {
+    h1 {
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 24px;
+      margin: 0;
+    }
+    h5 {
+      display: none !important;
+    }
+  }
+  .mobile-res {
+    flex-direction: column !important;
+  }
+  .mobile-res-r {
+    flex-direction: column-reverse !important;
+  }
+  .nav-btn {
+    display: block;
+    margin-right: 20px;
+    cursor: pointer;
+    div {
+      border: 1px solid white;
+      height: 1px;
+      width: 20px;
+      margin: 2px 0;
+    }
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 220px;
+    background-color: #28bd8b;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    ul {
+      display: block;
+      padding: 0;
+      li {
+        padding: 10px 0 10px 40px;
+        &:hover {
+          background-color: #18a072 !important;
+        }
+        a {
+          color: white !important;
+        }
+      }
+    }
+    .close-img {
+      cursor: pointer;
+      text-align: right;
+      padding: 10px 10px 0 0;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+
+
