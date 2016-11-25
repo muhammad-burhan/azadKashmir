@@ -28,7 +28,7 @@ h3 {
 h5 {
   font-size: 16px;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: none;
 }
 header {
   display: flex;
@@ -53,7 +53,7 @@ header {
   flex: 1;
 }
 .logo img {
-  width: 100%;
+  width: 95%;
 }
 header ul {
   display: flex;
@@ -113,7 +113,9 @@ header ul {
   flex-direction: row;
   flex-flow: row wrap;
 }
-
+.menu-item {
+  cursor: pointer;
+}
 .home {
   position: relative;
   margin-bottom: -3px;
@@ -152,6 +154,7 @@ header ul {
 .loc-cnt {
   padding: 30px;
   text-align: center;
+  font-size: 18px;
 }
 .nav-btn{
   display: none;
